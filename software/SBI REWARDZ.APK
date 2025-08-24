@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .login-box {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      width: 300px;
+      box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+    }
+    .login-box h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .login-box label {
+      font-weight: bold;
+      display: block;
+      margin: 10px 0 5px;
+    }
+    .login-box input {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .login-box button {
+      width: 100%;
+      padding: 10px;
+      background: #007bff;
+      border: none;
+      color: white;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .login-box button:hover {
+      background: #0056b3;
+    }
+    .captcha {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .captcha-code {
+      font-weight: bold;
+      background: #eee;
+      padding: 8px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-box">
+    <h2>Login</h2>
+    <form>
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username" required>
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" required>
+
+      <label for="mobile">Mobile</label>
+      <input type="text" id="mobile" name="mobile" required>
+
+      <label for="captcha">Enter Captcha</label>
+      <div class="captcha">
+        <span class="captcha-code">mp5cZ</span>
+        <input type="text" id="captcha" name="captcha" required>
+      </div>
+
+      <button type="submit">Login</button>
+    </form>
+  </div>
+</body>
+</html>
